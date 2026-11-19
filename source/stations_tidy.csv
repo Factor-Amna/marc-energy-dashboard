@@ -1,0 +1,39 @@
+station,mode,ridership,parking,population,density,transit_score,utilization,locker,rack,ev,meters,building_sf,area_source,lighting_controls_low,lighting_controls_mid,lighting_controls_high,line
+Seabrook,MARC,431.08,257,231434.0,92.9614,2.0,119.0,1,1,0,1.0,2904.0,"imputed, line median",10890.0,19602.0,34848.0,Penn
+Halethorpe,MARC,1418.75,795,282770.0,118.43,2.0,154.0,1,1,0,2.0,2904.0,"imputed, line median",10890.0,19602.0,34848.0,Penn
+New Carrollton,MARC,960.33,0,301688.0,62.3988,3.0,,1,1,0,,683892.0,reported,2564595.0,4616271.0,8206704.0,Penn
+Germantown,MARC,913.0,672,216450.0,57.305,2.0,102.0,0,1,0,,9600.0,reported,36000.0,64800.0,115200.0,Brunswick
+Kensington,MARC,188.58,102,418254.0,179.556,2.0,197.0,0,1,0,1.0,1716.0,reported,6435.0,11583.0,20592.0,Brunswick
+Savage,MARC,361.58,363,174932.0,17.8282,2.0,71.0,0,1,0,1.0,1767.0,"imputed, line median",6626.25,11927.25,21204.0,Camden
+Penn Station,MARC,4004.38,0,604827.0,327.275,3.0,0.0,0,1,0,,108900.0,reported,408375.0,735075.0,1306800.0,Penn
+Monocacy,MARC,219.25,791,101546.0,34.383,1.0,123.0,0,1,0,,412.0,reported,1545.0,2781.0,4944.0,Brunswick
+Jessup,MARC,0.58,32,175470.0,12.7344,1.0,181.0,0,0,0,,,,,,,Camden
+Silver Spring,MARC,561.08,0,391426.0,163.001,2.0,,0,0,0,1.0,10800.0,reported,40500.0,72900.0,129600.0,Brunswick
+Harpers Ferry,MARC,81.67,84,,0.0,1.0,161.0,0,1,0,,4440.0,reported,16650.0,29970.0,53280.0,Brunswick
+Greenbelt,MARC,61.33,0,347842.0,72.5863,1.0,0.0,1,1,0,1.0,13104.0,reported,49140.0,88452.0,157248.0,Camden
+BWI Rail Station,MARC,1889.08,0,183449.0,2.54689,3.0,234.0,1,0,1,2.0,2904.0,reported,10890.0,19602.0,34848.0,Penn
+Boyds,MARC,18.33,16,111308.0,5.09378,1.0,90.0,0,0,0,1.0,4440.0,"imputed, line median",16650.0,29970.0,53280.0,Brunswick
+Frederick,MARC,117.92,89,110368.0,122.251,1.0,29.0,0,1,0,3.0,2592.0,reported,9720.0,17496.0,31104.0,Brunswick
+Camden Station,MARC,1019.61,28,549217.0,264.876,2.0,,0,1,0,1.0,480.0,reported,1800.0,3240.0,5760.0,Camden
+Washington Grove,MARC,47.92,27,281726.0,75.1332,1.0,129.0,0,0,0,3.0,4440.0,"imputed, line median",16650.0,29970.0,53280.0,Brunswick
+Muirkirk,MARC,355.25,667,192427.0,35.6564,2.0,120.0,1,0,0,1.0,1767.0,"imputed, line median",6626.25,11927.25,21204.0,Camden
+Dorsey,MARC,581.0,842,145241.0,30.5627,2.0,85.0,1,1,1,1.0,4000.0,reported,15000.0,27000.0,48000.0,Camden
+Brunswick,MARC,556.5,626,11322.0,141.352,1.0,91.0,0,1,0,,1344.0,reported,5040.0,9072.0,16128.0,Brunswick
+Odenton,MARC,2815.58,1920,133367.0,52.2112,3.0,105.0,1,1,1,4.0,18000.0,reported,67500.0,121500.0,216000.0,Penn
+Edgewood,MARC,301.33,334,81133.0,31.8361,1.0,95.0,0,1,0,2.0,3000.0,reported,11250.0,20250.0,36000.0,Penn
+Barnesville,MARC,87.92,73,11447.0,3.82033,1.0,105.0,0,1,0,,375.0,reported,1406.25,2531.25,4500.0,Brunswick
+College Park,MARC,165.92,0,368352.0,115.883,2.0,,1,1,0,1.0,794.0,reported,2977.5,5359.5,9528.0,Camden
+Gaithersburg,MARC,585.33,0,282045.0,86.5942,2.0,0.0,0,0,0,1.0,9146.0,reported,34297.5,61735.5,109752.0,Brunswick
+Aberdeen,MARC,204.58,279,46940.0,178.282,1.0,98.0,0,1,0,1.0,2904.0,"imputed, line median",10890.0,19602.0,34848.0,Penn
+Laurel Mainstreet,MARC,678.75,470,147126.0,85.3208,2.0,112.0,1,1,0,1.0,800.0,reported,3000.0,5400.0,9600.0,Camden
+Martin State Airport,MARC,391.83,348,135189.0,33.1095,2.0,109.0,1,0,0,1.0,450.0,reported,1687.5,3037.5,5400.0,Penn
+Riverdale,MARC,59.33,108,364380.0,147.72,1.0,233.0,1,1,0,2.0,2400.0,reported,9000.0,16200.0,28800.0,Camden
+Point of Rocks,MARC,409.0,499,8424.0,39.4768,1.0,70.0,0,1,0,1.0,5450.0,reported,20437.5,36787.5,65400.0,Brunswick
+Bowie State,MARC,652.17,618,118615.0,5.09378,3.0,120.0,0,1,0,1.0,2904.0,"imputed, line median",10890.0,19602.0,34848.0,Penn
+Dickerson,MARC,26.75,16,5046.0,11.461,1.0,121.0,0,0,0,2.0,525.0,reported,1968.75,3543.75,6300.0,Brunswick
+St. Denis,MARC,17.17,32,225363.0,43.2971,1.0,41.0,0,0,0,1.0,1767.0,reported,6626.25,11927.25,21204.0,Camden
+Rockville,MARC,584.33,0,316574.0,182.103,2.0,0.0,1,1,0,1.0,11850.0,reported,44437.5,79987.5,142200.0,Brunswick
+West Baltimore,MARC,750.58,323,572849.0,276.337,2.0,95.0,0,1,0,4.0,2904.0,"imputed, line median",10890.0,19602.0,34848.0,Penn
+Metropolitan Grove,MARC,306.92,343,289266.0,35.6564,2.0,144.0,0,1,0,,,,,,,Brunswick
+Perryville,MARC,153.67,168,28554.0,50.9378,1.0,103.0,0,1,0,1.0,2000.0,reported,7500.0,13500.0,24000.0,Penn
+Garrett Park,MARC,50.33,41,389820.0,100.602,1.0,510.0,0,1,0,,,,,,,Brunswick

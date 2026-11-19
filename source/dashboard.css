@@ -1,0 +1,36 @@
+body { background:#F2EFEA; color:#2B2926; font-family: Inter, "Helvetica Neue", Arial, sans-serif; }
+.main-container { max-width: 1100px; }
+h1,h2,h3,h4,.title { color:#093679; }
+.subtitle { color:#6B665E; }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover { background:#093679; color:#fff; }
+.nav-pills > li > a { color:#093679; }
+.nav-tabs > li.active > a { color:#093679; border-top:3px solid #D99A0B; }
+table { font-size: 14px; }
+img { background:#F2EFEA; }
+
+.nav-tabs > li > a { color:#093679; }
+.nav-tabs > li > a:hover { color:#D99A0B; }
+
+.stn-bar { margin:10px 0 16px; padding:10px; background:#fff; border-radius:6px; }
+.stn-row { display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; }
+.stn-facts { min-width:300px; }
+.stn-plot { flex:1; min-width:380px; }
+.stn-note { color:#6B665E; font-size:13px; }
+.stn-card h3 small { color:#D99A0B; }
+.main-container { max-width: 1250px; }
+h1.title { display:none; }
+.dash-head { background:#093679; color:#fff; padding:16px 22px; border-radius:8px; margin:10px 0 14px; }
+.dash-title { font-size:24px; font-weight:700; }
+.dash-sub { color:#E6D9B8; font-size:14px; margin-top:2px; }
+.kpi-row { display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin-bottom:16px; }
+.kpi { background:#fff; border-radius:8px; padding:12px 14px; border-top:3px solid #D99A0B; }
+.kpi-v { font-size:26px; font-weight:700; color:#093679; line-height:1.1; }
+.kpi-l { font-size:12px; color:#6B665E; margin-top:4px; }
+.filters { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; background:#fff; border-radius:8px; padding:12px 16px; margin-bottom:14px; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+.card { background:#F2EFEA; border-radius:8px; }
+.grid2 .card { background:#fff; padding:6px; }
+@media (max-width: 900px) { .kpi-row { grid-template-columns:repeat(2,1fr);} .grid2, .filters { grid-template-columns:1fr; } }
+.dataTables_wrapper{padding:12px 14px;background:#fff;border-radius:8px;} table.dataTable{font-size:13px;} .grid2 .card{min-height:0}
+.grid2 .card{overflow:hidden}
+.grid2 .card{overflow:visible;padding-bottom:14px} .grid2{align-items:start}

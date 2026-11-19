@@ -1,0 +1,710 @@
+{
+ "spm": {
+  "Brunswick": 4440,
+  "Camden": 1767,
+  "Penn": 2904
+ },
+ "n_core": 36,
+ "core_total": [
+  649087.5,
+  1168357.5,
+  2077080.0
+ ],
+ "by_line": {
+  "Brunswick": {
+   "n": 16,
+   "meters": 15,
+   "sf": 103570,
+   "pkg": [
+    388387.5,
+    699097.5,
+    1242840.0
+   ]
+  },
+  "Camden": {
+   "n": 10,
+   "meters": 11,
+   "sf": 28646,
+   "pkg": [
+    107422.5,
+    193360.5,
+    343752.0
+   ]
+  },
+  "Penn": {
+   "n": 10,
+   "meters": 19,
+   "sf": 40874,
+   "pkg": [
+    153277.5,
+    275899.5,
+    490488.0
+   ]
+  }
+ },
+ "excluded": {
+  "New Carrollton": [
+   2564595.0,
+   4616271.0,
+   8206704.0
+  ],
+  "Penn Station": [
+   408375.0,
+   735075.0,
+   1306800.0
+  ],
+  "Union Station": [
+   null,
+   null,
+   null
+  ]
+ },
+ "top": [
+  [
+   "Martinsburg",
+   32000,
+   216000.0
+  ],
+  [
+   "Odenton",
+   18000,
+   121500.0
+  ],
+  [
+   "Greenbelt",
+   13104,
+   88452.0
+  ],
+  [
+   "Rockville",
+   11850,
+   79987.5
+  ],
+  [
+   "Silver Spring",
+   10800,
+   72900.0
+  ],
+  [
+   "Germantown",
+   9600,
+   64800.0
+  ]
+ ],
+ "pv": [
+  {
+   "lot": "Frederick MARC Parking",
+   "line": "Brunswick",
+   "spaces": 100,
+   "kw": 137.5,
+   "cost": [
+    302500.0,
+    433125.0,
+    515625.0
+   ]
+  },
+  {
+   "lot": "Monocacy MARC Parking",
+   "line": "Brunswick",
+   "spaces": 916,
+   "kw": 1259.5,
+   "cost": [
+    2770900.0,
+    3967425.0,
+    4723125.0
+   ]
+  },
+  {
+   "lot": "Dorsey MARC Parking",
+   "line": "Camden",
+   "spaces": 889,
+   "kw": 1222.375,
+   "cost": [
+    2689225.0,
+    3850481.25,
+    4583906.25
+   ]
+  },
+  {
+   "lot": "Muirkirk MARC Parking",
+   "line": "Camden",
+   "spaces": 650,
+   "kw": 893.75,
+   "cost": [
+    1966250.0000000002,
+    2815312.5,
+    3351562.5
+   ]
+  },
+  {
+   "lot": "Savage MARC Parking",
+   "line": "Camden",
+   "spaces": 978,
+   "kw": 1344.75,
+   "cost": [
+    2958450.0000000005,
+    4235962.5,
+    5042812.5
+   ]
+  },
+  {
+   "lot": "BWI Airport MARC Parking",
+   "line": "Penn",
+   "spaces": 3187,
+   "kw": 4382.125,
+   "cost": [
+    9640675.0,
+    13803693.75,
+    16432968.75
+   ]
+  },
+  {
+   "lot": "Halethorpe MARC Parking",
+   "line": "Penn",
+   "spaces": 770,
+   "kw": 1058.75,
+   "cost": [
+    2329250.0,
+    3335062.5,
+    3970312.5
+   ]
+  },
+  {
+   "lot": "Martin Airport MARC Parking",
+   "line": "Penn",
+   "spaces": 321,
+   "kw": 441.375,
+   "cost": [
+    971025.0000000001,
+    1390331.25,
+    1655156.25
+   ]
+  },
+  {
+   "lot": "Seabrook MARC Parking",
+   "line": "Penn",
+   "spaces": 264,
+   "kw": 363.0,
+   "cost": [
+    798600.0000000001,
+    1143450.0,
+    1361250.0
+   ]
+  }
+ ],
+ "pv_total": [
+  24426875.0,
+  34974843.75,
+  41636718.75
+ ],
+ "pv_kw": 11103.125,
+ "rows": [
+  {
+   "station": "Aberdeen",
+   "line": "Penn",
+   "meters": 1,
+   "sf": 2904,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    10890.0,
+    19602.0,
+    34848.0
+   ]
+  },
+  {
+   "station": "BWI Marshall",
+   "line": "Penn",
+   "meters": 2,
+   "sf": 2904,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    10890.0,
+    19602.0,
+    34848.0
+   ]
+  },
+  {
+   "station": "Barnesville",
+   "line": "Brunswick",
+   "meters": null,
+   "sf": 375,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    1406.25,
+    2531.25,
+    4500.0
+   ]
+  },
+  {
+   "station": "Bowie State",
+   "line": "Penn",
+   "meters": 1,
+   "sf": 2904,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    10890.0,
+    19602.0,
+    34848.0
+   ]
+  },
+  {
+   "station": "Boyds",
+   "line": "Brunswick",
+   "meters": 1,
+   "sf": 4440,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    16650.0,
+    29970.0,
+    53280.0
+   ]
+  },
+  {
+   "station": "Brunswick",
+   "line": "Brunswick",
+   "meters": null,
+   "sf": 1344,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    5040.0,
+    9072.0,
+    16128.0
+   ]
+  },
+  {
+   "station": "Camden",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 480,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    1800.0,
+    3240.0,
+    5760.0
+   ]
+  },
+  {
+   "station": "College Park",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 794,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    2977.5,
+    5359.5,
+    9528.0
+   ]
+  },
+  {
+   "station": "Dickerson",
+   "line": "Brunswick",
+   "meters": 2,
+   "sf": 525,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    1968.75,
+    3543.75,
+    6300.0
+   ]
+  },
+  {
+   "station": "Dorsey",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 4000,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    15000.0,
+    27000.0,
+    48000.0
+   ]
+  },
+  {
+   "station": "Duffields",
+   "line": "Brunswick",
+   "meters": 1,
+   "sf": 4440,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    16650.0,
+    29970.0,
+    53280.0
+   ]
+  },
+  {
+   "station": "Edgewood",
+   "line": "Penn",
+   "meters": 2,
+   "sf": 3000,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    11250.0,
+    20250.0,
+    36000.0
+   ]
+  },
+  {
+   "station": "Frederick",
+   "line": "Brunswick",
+   "meters": 3,
+   "sf": 2592,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    9720.0,
+    17496.0,
+    31104.0
+   ]
+  },
+  {
+   "station": "Gaithersburg",
+   "line": "Brunswick",
+   "meters": 1,
+   "sf": 9146,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    34297.5,
+    61735.5,
+    109752.0
+   ]
+  },
+  {
+   "station": "Germantown",
+   "line": "Brunswick",
+   "meters": null,
+   "sf": 9600,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    36000.0,
+    64800.0,
+    115200.0
+   ]
+  },
+  {
+   "station": "Greenbelt",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 13104,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    49140.0,
+    88452.0,
+    157248.0
+   ]
+  },
+  {
+   "station": "Halethorpe",
+   "line": "Penn",
+   "meters": 2,
+   "sf": 2904,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    10890.0,
+    19602.0,
+    34848.0
+   ]
+  },
+  {
+   "station": "Harpers Ferry",
+   "line": "Brunswick",
+   "meters": null,
+   "sf": 4440,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    16650.0,
+    29970.0,
+    53280.0
+   ]
+  },
+  {
+   "station": "Kensington",
+   "line": "Brunswick",
+   "meters": 1,
+   "sf": 1716,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    6435.0,
+    11583.0,
+    20592.0
+   ]
+  },
+  {
+   "station": "Laurel",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 800,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    3000.0,
+    5400.0,
+    9600.0
+   ]
+  },
+  {
+   "station": "Laurel Park",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 1767,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    6626.25,
+    11927.25,
+    21204.0
+   ]
+  },
+  {
+   "station": "Martin State Airport",
+   "line": "Penn",
+   "meters": 1,
+   "sf": 450,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    1687.5,
+    3037.5,
+    5400.0
+   ]
+  },
+  {
+   "station": "Martinsburg",
+   "line": "Brunswick",
+   "meters": null,
+   "sf": 32000,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    120000.0,
+    216000.0,
+    384000.0
+   ]
+  },
+  {
+   "station": "Monocacy",
+   "line": "Brunswick",
+   "meters": null,
+   "sf": 412,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    1545.0,
+    2781.0,
+    4944.0
+   ]
+  },
+  {
+   "station": "Muirkirk",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 1767,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    6626.25,
+    11927.25,
+    21204.0
+   ]
+  },
+  {
+   "station": "New Carrollton",
+   "line": "Penn",
+   "meters": null,
+   "sf": 683892,
+   "src": "reported",
+   "core": false,
+   "pkg": [
+    2564595.0,
+    4616271.0,
+    8206704.0
+   ]
+  },
+  {
+   "station": "Odenton",
+   "line": "Penn",
+   "meters": 4,
+   "sf": 18000,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    67500.0,
+    121500.0,
+    216000.0
+   ]
+  },
+  {
+   "station": "Penn Station",
+   "line": "Penn",
+   "meters": null,
+   "sf": 108900,
+   "src": "reported",
+   "core": false,
+   "pkg": [
+    408375.0,
+    735075.0,
+    1306800.0
+   ]
+  },
+  {
+   "station": "Perryville",
+   "line": "Penn",
+   "meters": 1,
+   "sf": 2000,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    7500.0,
+    13500.0,
+    24000.0
+   ]
+  },
+  {
+   "station": "Points of Rocks",
+   "line": "Brunswick",
+   "meters": 1,
+   "sf": 5450,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    20437.5,
+    36787.5,
+    65400.0
+   ]
+  },
+  {
+   "station": "Riverdale",
+   "line": "Camden",
+   "meters": 2,
+   "sf": 2400,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    9000.0,
+    16200.0,
+    28800.0
+   ]
+  },
+  {
+   "station": "Rockville",
+   "line": "Brunswick",
+   "meters": 1,
+   "sf": 11850,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    44437.5,
+    79987.5,
+    142200.0
+   ]
+  },
+  {
+   "station": "Savage",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 1767,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    6626.25,
+    11927.25,
+    21204.0
+   ]
+  },
+  {
+   "station": "Seabrook",
+   "line": "Penn",
+   "meters": 1,
+   "sf": 2904,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    10890.0,
+    19602.0,
+    34848.0
+   ]
+  },
+  {
+   "station": "Silver Spring",
+   "line": "Brunswick",
+   "meters": 1,
+   "sf": 10800,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    40500.0,
+    72900.0,
+    129600.0
+   ]
+  },
+  {
+   "station": "St Denis",
+   "line": "Camden",
+   "meters": 1,
+   "sf": 1767,
+   "src": "reported",
+   "core": true,
+   "pkg": [
+    6626.25,
+    11927.25,
+    21204.0
+   ]
+  },
+  {
+   "station": "Union Station",
+   "line": "Shared",
+   "meters": null,
+   "sf": null,
+   "src": "no data",
+   "core": false,
+   "pkg": [
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "station": "Washington Grove",
+   "line": "Brunswick",
+   "meters": 3,
+   "sf": 4440,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    16650.0,
+    29970.0,
+    53280.0
+   ]
+  },
+  {
+   "station": "West Baltimore",
+   "line": "Penn",
+   "meters": 4,
+   "sf": 2904,
+   "src": "imputed, line median",
+   "core": true,
+   "pkg": [
+    10890.0,
+    19602.0,
+    34848.0
+   ]
+  }
+ ]
+}

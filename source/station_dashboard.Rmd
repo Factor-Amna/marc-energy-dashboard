@@ -1,0 +1,96 @@
+---
+title: "MARC Station Energy Opportunity Screening"
+output:
+  html_document:
+    self_contained: true
+    theme: flatly
+    css: dashboard.css
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+suppressPackageStartupMessages({library(plotly); library(DT); library(crosstalk); library(htmltools)})
+source("hist_helpers.R"); source("viewer.R")
+core <- stations %>% filter(!is.na(building_sf), !station %in% c("New Carrollton", "Penn Station"))
+kpi <- function(value, label) div(class = "kpi", div(class = "kpi-v", value), div(class = "kpi-l", label))
+cj <- jsonlite::read_json("cost.json", simplifyVector = FALSE)
+usd_m <- function(x) paste0("$", formatC(x / 1e6, format = "f", digits = 2), "M")
+```
+
+<div class="dash-head"><div class="dash-title">MARC Station Energy Opportunity Screening</div><div class="dash-sub">Pilot of 38 MARC stations from the MDOT MTA station file &middot; EMSE 6577 &middot; screening estimates, not quotes</div></div>
+
+```{r kpis, results = "asis"}
+tagList(div(class = "kpi-row",
+  kpi(nrow(stations), "stations in the pilot"),
+  kpi("6", "upgrades in the MTA pool"),
+  kpi("4", "station types found"),
+  kpi(format(median(stations$parking), big.mark = ","), "median parking spots"),
+  kpi(cj$n_core, "stations with a cost estimate"),
+  kpi(usd_m(cj$core_total[[2]]), "lighting and controls, middle case")))
+```
+
+## {.tabset .tabset-pills}
+
+### Overview
+
+```{r overview, results = "asis"}
+d <- stations %>%
+  mutate(x = log10(parking + 1), y = log10(ridership + 1),
+         cost = lighting_controls_mid,
+         label = sprintf("%s<br>%s<br>Parking %s, ridership %s", station, line, format(parking, big.mark = ","), format(round(ridership), big.mark = ",")))
+sd <- SharedData$new(d, key = ~station, group = "stn")
+pal <- c("Penn" = navy, "Brunswick" = gold, "Camden" = mute)
+
+p1 <- plot_ly(sd, x = ~x, y = ~y, color = ~line, colors = pal, text = ~label, hoverinfo = "text",
+              type = "scatter", mode = "markers", marker = list(size = 10, opacity = 0.85)) %>%
+  layout(title = list(text = "Parking vs weekday ridership", x = 0.02, font = list(size = 15, color = navy)),
+         xaxis = list(title = "Parking spots", tickvals = log10(c(0, 10, 100, 1000) + 1), ticktext = c("0", "10", "100", "1,000"), zeroline = FALSE),
+         yaxis = list(title = "Weekday ridership", tickvals = log10(c(0, 10, 100, 1000, 5000) + 1), ticktext = c("0", "10", "100", "1,000", "5,000"), zeroline = FALSE),
+         paper_bgcolor = bg, plot_bgcolor = bg, legend = list(orientation = "h", y = -0.2), margin = list(t = 50)) %>%
+  config(displayModeBar = FALSE) %>% highlight(on = "plotly_selected", off = "plotly_deselect", dynamic = FALSE)
+
+cs <- d %>% filter(!is.na(cost), !station %in% c("New Carrollton", "Penn Station"))
+sd2 <- SharedData$new(cs, key = ~station, group = "stn")
+p2 <- plot_ly(sd2, x = ~cost, y = ~reorder(station, cost), type = "bar", orientation = "h", marker = list(color = navy),
+              text = ~sprintf("%s<br>%s sq ft<br>$%s middle case", station, format(round(building_sf), big.mark = ","), format(round(cost), big.mark = ",")),
+              hoverinfo = "text", textposition = "none") %>%
+  layout(title = list(text = "Lighting and controls cost, middle case", x = 0.02, font = list(size = 15, color = navy)),
+         xaxis = list(title = "Dollars", tickprefix = "$", separatethousands = TRUE), yaxis = list(title = "", tickfont = list(size = 10)),
+         paper_bgcolor = bg, plot_bgcolor = bg, margin = list(t = 50, l = 120), height = 520) %>%
+  config(displayModeBar = FALSE) %>% highlight(on = "plotly_selected", off = "plotly_deselect", dynamic = FALSE)
+
+tbl <- d %>% select(station, line, ridership, parking, ev, meters, building_sf, lighting_controls_low, lighting_controls_mid, lighting_controls_high)
+sdt <- SharedData$new(tbl, key = ~station, group = "stn")
+
+tagList(
+  div(class = "filters",
+      div(class = "f", filter_checkbox("line", "Line", sd, ~line, inline = TRUE)),
+      div(class = "f", filter_slider("parking", "Parking spots", sd, ~parking, width = "100%")),
+      div(class = "f", filter_slider("ridership", "Weekday ridership", sd, ~ridership, width = "100%"))),
+  div(class = "grid2", div(class = "card", p1), div(class = "card", p2)),
+  div(class = "card",
+      datatable(sdt, rownames = FALSE, class = "compact stripe",
+                colnames = c("Station", "Line", "Weekday ridership", "Parking", "EV charging", "Meters", "Building sq ft", "Cost low", "Cost mid", "Cost high"),
+                options = list(pageLength = 10, dom = "ftip", autoWidth = FALSE)) %>%
+        formatRound(c("ridership", "building_sf"), 0) %>%
+        formatCurrency(c("lighting_controls_low", "lighting_controls_mid", "lighting_controls_high"), digits = 0)))
+```
+
+Click and drag on the scatter or the bars to select stations, and every chart and the table follow. The headline cost covers the 36 stations in the cost model (Martinsburg, Camden and a few others are not in the 83-station pilot file), and the chart shows the 33 that match the pilot file.
+
+### Station profiles
+
+```{r viewer, results = "asis"}
+render_station_viewer()
+```
+
+### Histograms
+
+```{r hists, fig.width = 12, fig.height = 6, out.width = "100%"}
+plot_raw()
+```
+
+```{r hists2, fig.width = 14, fig.height = 6.2, out.width = "100%"}
+plot_transforms()
+```

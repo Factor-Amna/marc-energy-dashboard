@@ -1,0 +1,19 @@
+body { background:#F2EFEA; color:#2B2926; font-family: Inter, "Helvetica Neue", Arial, sans-serif; }
+.main-container { max-width: 1100px; }
+h1,h2,h3,h4,.title { color:#093679; }
+.subtitle { color:#6B665E; }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover { background:#093679; color:#fff; }
+.nav-pills > li > a { color:#093679; }
+.nav-tabs > li.active > a { color:#093679; border-top:3px solid #D99A0B; }
+table { font-size: 14px; }
+img { background:#F2EFEA; }
+
+.nav-tabs > li > a { color:#093679; }
+.nav-tabs > li > a:hover { color:#D99A0B; }
+
+.stn-bar { margin:10px 0 16px; padding:10px; background:#fff; border-radius:6px; }
+.stn-row { display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; }
+.stn-facts { min-width:300px; }
+.stn-plot { flex:1; min-width:380px; }
+.stn-note { color:#6B665E; font-size:13px; }
+.stn-card h3 small { color:#D99A0B; }
