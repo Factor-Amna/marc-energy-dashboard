@@ -60,7 +60,7 @@ p2 <- plot_ly(sd2, x = ~cost, y = ~reorder(station, cost), type = "bar", orienta
          paper_bgcolor = bg, plot_bgcolor = bg, margin = list(t = 50, l = 120), height = 520) %>%
   config(displayModeBar = FALSE) %>% highlight(on = "plotly_selected", off = "plotly_deselect", dynamic = FALSE)
 
-tbl <- d %>% select(station, line, ridership, parking, ev, meters, building_sf, lighting_controls_low, lighting_controls_mid, lighting_controls_high)
+tbl <- d %>% select(station, line, transit_score, ridership, parking, ev, meters, building_sf, lighting_controls_low, lighting_controls_mid, lighting_controls_high)
 sdt <- SharedData$new(tbl, key = ~station, group = "stn")
 
 tagList(
@@ -71,7 +71,7 @@ tagList(
   div(class = "grid2", div(class = "card", p1), div(class = "card", p2)),
   div(class = "card",
       datatable(sdt, rownames = FALSE, class = "compact stripe",
-                colnames = c("Station", "Line", "Weekday ridership", "Parking", "EV charging", "Meters", "Building sq ft", "Cost low", "Cost mid", "Cost high"),
+                colnames = c("Station", "Line", "Transit score", "Weekday ridership", "Parking", "EV charging", "Meters", "Building sq ft", "Cost low", "Cost mid", "Cost high"),
                 options = list(pageLength = 10, dom = "ftip", autoWidth = FALSE)) %>%
         formatRound(c("ridership", "building_sf"), 0) %>%
         formatCurrency(c("lighting_controls_low", "lighting_controls_mid", "lighting_controls_high"), digits = 0)))
